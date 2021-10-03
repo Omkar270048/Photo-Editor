@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo editor</title>
+        <meta charset="utf-8">
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js'></script>
+</head>
+    <body>
+   <div class="fluid-content main">
+        <div class="well">
+ 
+   <p class="appName">Photo Editor</p>
+ </div>  
+ <div class="edit">  
+ <div class='img'>
+  <div class="well" >
+     <img src="https://dl.dropbox.com/s/m6t58gpo2ivibuh/filter.jpg" id="image"> 
+  </div>      
+</div>
+ 
+ <!-- Input -->
+ <div class="well filters">
+ 
+ <div class="well" id="dblur">
+ Blur<input type="range" id="blur" min="0" max="10" value="0">
+ </div>
+ <div class="well" id="dbr">
+ Brigntness<input type="range" id="brightness" min="0" max="500" value="100">
+ </div>
+ 
+ <div class="well" id="dco">
+ Contrast<input type="range" id="contrast" min="0" max="500" value="100">
+  </div>   
+  
+<div class="well" id="dgr">
+ Grayscale<input type="range" id="grayscale" min="0" max="100" value="0">
+ </div>
+ <div class="well" id="dhu">
+ Hue<input type="range" id="hue" min="0" max="360" value="0">
+ </div>
+ 
+ <div class="well" id="div">
+ Invert<input type="range" id="invert" min="0" max="100" value="0">
+  </div>   
+
+<div class="well" id="dop">
+ Opacity<input type="range" id="opacity" min="0" max="100" value="100">
+ </div>
+ <div class="well" id="dsa">
+ Saturate<input type="range" id="saturate" min="0" max="500" value="100">
+ </div>
+ 
+ <div class="well" id="dse">
+ Sepla<input type="range" id="sepia" min="0" max="100" value="0">
+  </div>      
+ </div>       
+    </div> 
+</div>  
+       
+    </body>
+</html>

@@ -7,24 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src='script.js'></script>
-</head>
+    <link rel="stylesheet" href="pcss.css">
+    </head>
     <body>
    <div class="fluid-content main">
         <div class="well">
  
    <p class="appName">Photo Editor</p>
  </div>  
- <div class="edit">  
- <div class='img'>
-  <div class="well" >
-     <img src="https://dl.dropbox.com/s/m6t58gpo2ivibuh/filter.jpg" id="image"> 
+  <div class="flex layout col ">
+  <div class="well flex justify-center align-center">
+     <img src="https://dl.dropbox.com/s/m6t58gpo2ivibuh/filter.jpg" id="image" download> 
   </div>      
-</div>
  
  <!-- Input -->
- <div class="well filters">
+ <div class="well filters flex wrap col-gap norwrap">
  
  <div class="well" id="dblur">
  Blur<input type="range" id="blur" min="0" max="10" value="0">
@@ -60,7 +57,17 @@
   </div>      
  </div>       
     </div> 
-</div>  
-       
+      </div> 
+  
+      <div class="well flex col col-gap row-gap">
+          <input type="file" accept="image/*" name='image' id='img' onchange='openFile(event)'>
+        
+<!--  working on download feature     -->
+<!--         <a href="https://dl.dropbox.com/s/m6t58gpo2ivibuh/filter.jpg" id="btnDownload" download>
+          <button >Download</button>
+        </a>
+        <p>Image downloading feature is currently unavailable</P> -->
+      </div>
+   <script src="script.js"></script> 
     </body>
 </html>
